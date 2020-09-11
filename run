@@ -1,0 +1,17 @@
+
+file=main.cpp
+
+if g++ $file; then
+	echo -e "${nc}"
+	./a.out
+	echo -e "\n\n\n\n====================================================================\n  hoe geche"
+	echo -e "\n\n\n"
+else
+	echo -e "\n\n\n\n====================================================================\n  hoe ni"
+	echo -e "\n  $head e ki dicche:\n"
+	g++ $file 2>&1 | head
+	echo -e "\n\n\n"
+fi
+
+#g++ table1.cpp 2>&1 | head
+#./a.out
